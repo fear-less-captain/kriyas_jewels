@@ -1,0 +1,1301 @@
+/* =====================================================
+   KRIYASH JEWELS
+   LUXURY NAVY + GOLD THEME
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.jewels-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at center,
+      #071b32 0%,
+      #031020 55%,
+      #010914 100%);
+
+  color: #f7d98a;
+
+  font-family: "Montserrat", sans-serif;
+
+  overflow-x: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.main-header {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 6%;
+
+  background:
+    linear-gradient(90deg,
+      #020c18,
+      #061a2e,
+      #020c18);
+
+  border-bottom: 1px solid rgba(221, 171, 67, 0.45);
+
+  position: relative;
+  z-index: 20;
+}
+
+
+/* LOGO */
+
+.logo {
+  width: 230px;
+
+  text-align: left;
+
+  line-height: 1;
+}
+
+.logo-main {
+  font-family: Georgia, serif;
+
+  font-size: 31px;
+
+  letter-spacing: 3px;
+
+  color: #f4d17b;
+}
+
+.logo-sub {
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  letter-spacing: 5px;
+
+  margin-top: 3px;
+
+  color: #f4d17b;
+
+  padding-left: 42px;
+}
+
+
+/* NAV */
+
+.main-nav {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 45px;
+
+  flex: 1;
+}
+
+.main-nav a {
+  color: #f8e5b2;
+
+  font-size: 16px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  position: relative;
+
+  padding: 25px 0;
+
+  transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #ffffff;
+}
+
+.main-nav a.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  height: 2px;
+
+  background: #e8b94f;
+
+  box-shadow: 0 0 12px #e8b94f;
+}
+
+
+/* HEADER ACTIONS */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+.search-btn {
+  border: none;
+
+  background: transparent;
+
+  color: #f7d98a;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.enquire-btn {
+  height: 44px;
+
+  padding: 0 20px;
+
+  border: 1px solid #dcae42;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #f5d47e;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.enquire-btn i {
+  margin-right: 8px;
+
+  font-size: 18px;
+}
+
+.enquire-btn:hover {
+  background: #dcae42;
+
+  color: #071426;
+
+  box-shadow: 0 0 20px rgba(220, 174, 66, 0.45);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero-section {
+  min-height: 430px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(90deg,
+      rgba(1, 11, 24, 0.98) 0%,
+      rgba(2, 15, 31, 0.92) 42%,
+      rgba(2, 15, 31, 0.45) 75%,
+      rgba(2, 15, 31, 0.9) 100%);
+}
+
+
+/*
+  Hero jewellery image
+
+  Put your preferred hero image here.
+*/
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 58%;
+  height: 100%;
+
+  background:
+    url("../../../../public/images/jewelry/hero/hero-jewellery-reference.jpg")
+    center / cover no-repeat;
+
+  z-index: 1;
+}
+
+
+.hero-content {
+  width: 55%;
+
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  padding-left: 4%;
+}
+
+.hero-small-title {
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  color: #e9c976;
+
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-family: Georgia, serif;
+
+  font-size: 49px;
+
+  letter-spacing: 2px;
+
+  margin: 12px 0;
+
+  color: #f4d17d;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gold-divider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #e5b951;
+
+  margin: 8px 0;
+}
+
+.gold-divider span {
+  width: 100px;
+
+  height: 1px;
+
+  background: #d9a940;
+}
+
+.hero-tagline {
+  font-family: "Brush Script MT", cursive;
+
+  font-size: 39px;
+
+  color: #f4d58a;
+
+  margin-top: 8px;
+}
+
+.hero-tagline span {
+  font-family: Georgia, serif;
+
+  font-size: 28px;
+
+  margin: 0 12px;
+}
+
+.hero-content p {
+  color: #f2ead9;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  margin: 16px 0 25px;
+}
+
+.hero-btn {
+  border: 1px solid #e5b54d;
+
+  background:
+    linear-gradient(90deg,
+      #c99732,
+      #f1d078,
+      #c99732);
+
+  color: #081526;
+
+  font-weight: 600;
+
+  font-size: 15px;
+
+  padding: 13px 25px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 0 18px rgba(238, 193, 79, 0.5);
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 30px rgba(238, 193, 79, 0.75);
+}
+
+.hero-btn span {
+  margin-left: 15px;
+
+  font-size: 20px;
+}
+
+
+.hero-right-text {
+  position: absolute;
+
+  right: 5%;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 180px;
+
+  z-index: 3;
+
+  text-align: center;
+
+  color: #e8c566;
+
+  font-family: Georgia, serif;
+
+  line-height: 1.4;
+}
+
+.hero-right-text span,
+.hero-right-text strong {
+  display: block;
+}
+
+.hero-right-text span {
+  font-size: 14px;
+}
+
+.hero-right-text strong {
+  font-size: 22px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.category-section {
+  padding: 35px 2.5% 45px;
+
+  position: relative;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(10, 37, 64, 0.8),
+      rgba(1, 13, 25, 0.95));
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.heading-decoration {
+  color: #e6bb57;
+
+  font-size: 20px;
+
+  margin-bottom: 5px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  color: #f1ce78;
+
+  font-size: 34px;
+
+  letter-spacing: 2px;
+}
+
+.section-heading p {
+  margin: 8px 0 0;
+
+  color: #d9d2c5;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   CATEGORY GRID
+===================================================== */
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 12px;
+
+  max-width: 1500px;
+
+  margin: auto;
+}
+
+
+.category-card {
+  position: relative;
+
+  border: 1px solid #bd8e2f;
+
+  background: #03101e;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  min-height: 330px;
+
+  transition:
+    transform 0.35s,
+    box-shadow 0.35s,
+    border-color 0.35s;
+}
+
+
+.category-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #f3cd6b;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(218, 169, 58, 0.22);
+}
+
+
+.category-image {
+  position: absolute;
+
+  inset: 0;
+
+  height: 100%;
+}
+
+.category-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.06);
+}
+
+
+.image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.05) 35%,
+      rgba(1, 10, 20, 0.88) 75%,
+      #020b15 100%);
+}
+
+
+/* CATEGORY CONTENT */
+
+.category-content {
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  text-align: center;
+
+  padding: 15px 10px 12px;
+
+  z-index: 3;
+}
+
+.category-content h3 {
+  font-family: Georgia, serif;
+
+  font-size: 19px;
+
+  color: #f3d37e;
+
+  margin: 0;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.mini-divider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  color: #d7a940;
+
+  margin: 7px 0;
+}
+
+.mini-divider span {
+  width: 30px;
+
+  height: 1px;
+
+  background: #c49a40;
+}
+
+.view-btn {
+  border: 1px solid #d6a63d;
+
+  background: rgba(2, 13, 25, 0.85);
+
+  color: #f0cf7a;
+
+  padding: 8px 14px;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.view-btn span {
+  margin-left: 8px;
+
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   FEATURED
+===================================================== */
+
+.featured-section {
+  padding: 40px 4% 70px;
+
+  background:
+    linear-gradient(180deg,
+      #020e1d,
+      #031426);
+}
+
+.featured-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+  max-width: 1300px;
+
+  margin: auto;
+}
+
+.featured-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid #a87c29;
+
+  background: #020c18;
+
+  transition: 0.35s;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #e6bd59;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.featured-card>img {
+  width: 100%;
+
+  height: 230px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.featured-info {
+  padding: 14px;
+
+  text-align: center;
+}
+
+.featured-info h3 {
+  margin: 0 0 12px;
+
+  color: #efd079;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+}
+
+.featured-info button {
+  border: 1px solid #d4a53f;
+
+  background: transparent;
+
+  color: #efd079;
+
+  padding: 8px 15px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.featured-info button:hover {
+  background: #d4a53f;
+
+  color: #071425;
+}
+
+/* =========================================================
+   FINAL HERO + HEADER ALIGNMENT FIX
+========================================================= */
+
+/* ---------- HEADER ---------- */
+
+.main-header {
+  height: 72px !important;
+  overflow: visible !important;
+}
+
+.header-inner {
+  height: 72px !important;
+  width: 100% !important;
+  max-width: none !important;
+
+  padding: 0 35px !important;
+
+  display: grid !important;
+
+  grid-template-columns: 270px 1fr 270px !important;
+
+  align-items: center !important;
+}
+
+
+/* FIX LOGO BEING CUT OFF */
+
+.logo {
+  position: relative !important;
+
+  width: 270px !important;
+  height: 65px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  margin: 0 !important;
+
+  top: 0 !important;
+}
+
+.logo-main {
+  position: relative !important;
+
+  margin: 0 !important;
+
+  font-size: 31px !important;
+
+  line-height: 30px !important;
+}
+
+.logo-line {
+  margin: 4px auto 2px !important;
+}
+
+.logo-sub {
+  margin: 0 !important;
+
+  line-height: 16px !important;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.main-nav {
+  width: 100% !important;
+
+  height: 72px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 48px !important;
+
+  flex: none !important;
+}
+
+.main-nav a {
+  height: 72px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+}
+
+
+/* ---------- HEADER ACTIONS ---------- */
+
+.header-actions {
+  width: 270px !important;
+
+  height: 72px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: flex-end !important;
+
+  gap: 18px !important;
+
+  flex-shrink: 0 !important;
+}
+
+.enquire-btn {
+  height: 45px !important;
+
+  white-space: nowrap !important;
+
+  flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+  height: 430px !important;
+
+  min-height: 430px !important;
+
+  position: relative !important;
+
+  overflow: hidden !important;
+
+  display: block !important;
+}
+
+
+/* ---------- HERO IMAGE ---------- */
+
+.hero-image {
+  position: absolute !important;
+
+  top: 0 !important;
+  right: 0 !important;
+
+  width: 59% !important;
+  height: 100% !important;
+
+  z-index: 1 !important;
+
+  background-image:
+    url('../../../../public/images/jewelry/hero/hero-jewellery-reference.jpg') !important;
+
+  background-repeat: no-repeat !important;
+
+  /*
+    IMPORTANT:
+    Don't use cover here.
+    Cover was making the jewellery extremely large.
+  */
+  background-size: 100% 100% !important;
+
+  background-position: right center !important;
+
+  transform: none !important;
+}
+
+
+/* ---------- HERO OVERLAY ---------- */
+
+.hero-overlay {
+  position: absolute !important;
+
+  inset: 0 !important;
+
+  z-index: 2 !important;
+
+  pointer-events: none !important;
+
+  background:
+    linear-gradient(
+      90deg,
+
+      #020b16 0%,
+
+      #020b16 29%,
+
+      rgba(2, 11, 22, 0.96) 39%,
+
+      rgba(2, 11, 22, 0.72) 48%,
+
+      rgba(2, 11, 22, 0.18) 62%,
+
+      rgba(2, 11, 22, 0.02) 100%
+    ) !important;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative !important;
+
+  z-index: 10 !important;
+
+  width: 100% !important;
+
+  height: 430px !important;
+
+  min-height: 430px !important;
+
+  padding: 0 !important;
+
+  display: block !important;
+}
+
+
+/* ---------- MAIN HERO TEXT ---------- */
+
+.hero-main {
+  position: absolute !important;
+
+  left: 4% !important;
+
+  top: 45% !important;
+
+  transform: translateY(-50%) !important;
+
+  width: 48% !important;
+
+  max-width: 720px !important;
+
+  text-align: center !important;
+}
+
+
+/* ---------- HERO TITLE ---------- */
+
+.hero-small-title {
+  font-size: 22px !important;
+
+  margin-bottom: 8px !important;
+}
+
+.hero-main h1 {
+  font-size: clamp(40px, 4vw, 58px) !important;
+
+  white-space: nowrap !important;
+
+  letter-spacing: 1px !important;
+}
+
+
+/* ---------- TAGLINE ---------- */
+
+.hero-tagline {
+  font-size: 31px !important;
+
+  white-space: nowrap !important;
+
+  gap: 12px !important;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+.hero-main p {
+  margin-top: 12px !important;
+
+  margin-bottom: 22px !important;
+
+  font-size: 15px !important;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.hero-btn {
+  min-width: 300px !important;
+
+  height: 50px !important;
+}
+
+
+/* =========================================================
+   RIGHT HERO TEXT
+========================================================= */
+
+.hero-right-text {
+  position: absolute !important;
+
+  z-index: 12 !important;
+
+  right: 2.5% !important;
+
+  top: 50% !important;
+
+  transform: translateY(-50%) !important;
+
+  width: 145px !important;
+
+  text-align: center !important;
+}
+
+.hero-right-text span {
+  font-size: 12px !important;
+}
+
+.hero-right-text strong {
+  font-size: 20px !important;
+
+  line-height: 1.15 !important;
+}
+
+
+/* =========================================================
+   HERO DECORATIONS
+========================================================= */
+
+.hero-decoration {
+  z-index: 15 !important;
+
+  pointer-events: none !important;
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+========================================================= */
+
+.category-section {
+  padding-top: 38px !important;
+}
+
+
+/* =========================================================
+   DESKTOP CATEGORY CARDS
+========================================================= */
+
+.category-card {
+  height: 370px !important;
+
+  min-height: 370px !important;
+}
+
+/* =========================================================
+   KRIYASH JEWELS - GOLD FLORAL FRAME
+========================================================= */
+
+.jewels-page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+/* ================= LEFT FLORAL ================= */
+
+.jewels-page::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 170px;
+  height: 700px;
+
+  background-image:
+    url('/images/theme/kriyash-floral-left-transparent.png');
+
+  background-repeat: no-repeat;
+
+  background-position: left top;
+
+  background-size: 170px auto;
+
+  pointer-events: none;
+
+  z-index: 50;
+}
+
+
+/* ================= RIGHT FLORAL ================= */
+
+.jewels-page::after {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 170px;
+  height: 700px;
+
+  background-image:
+    url('/images/theme/kriyash-floral-right-transparent.png');
+
+  background-repeat: no-repeat;
+
+  background-position: right top;
+
+  background-size: 170px auto;
+
+  pointer-events: none;
+
+  z-index: 50;
+}
+
+.main-header {
+  position: relative;
+  z-index: 100;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 101;
+}
+
+.hero-main {
+  position: absolute !important;
+  z-index: 20 !important;
+}
+
+.hero-right-text {
+  z-index: 20 !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .category-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .featured-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .jewels-page::before,
+  .jewels-page::after {
+    width: 90px;
+
+    background-size: 90px auto;
+
+    opacity: 0.7;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .jewels-page::before,
+  .jewels-page::after {
+    width: 55px;
+
+    background-size: 55px auto;
+
+    opacity: 0.5;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .main-header {
+    height: auto;
+
+    padding: 15px;
+
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: auto;
+
+    margin-right: auto;
+  }
+
+  .logo-main {
+    font-size: 23px;
+  }
+
+  .main-nav {
+    order: 3;
+
+    width: 100%;
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    margin-top: 15px;
+  }
+
+  .main-nav a {
+    padding: 10px 0;
+
+    white-space: nowrap;
+  }
+
+  .hero-section {
+    min-height: 600px;
+  }
+
+  .hero-section::after {
+    width: 100%;
+
+    opacity: 0.3;
+  }
+
+  .hero-content {
+    width: 100%;
+
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-tagline {
+    font-size: 30px;
+  }
+
+  .hero-right-text {
+    display: none;
+  }
+
+  .category-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .category-card {
+    min-height: 280px;
+  }
+
+  .featured-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .enquire-btn {
+    padding: 0 10px;
+
+    font-size: 12px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 27px;
+  }
+
+}

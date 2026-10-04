@@ -1,0 +1,600 @@
+<div class="jewels-page">
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="main-header">
+
+    <div class="header-inner">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <div class="logo-main">KRIYASH</div>
+        <div class="logo-line"></div>
+        <div class="logo-sub">JEWELS</div>
+      </div>
+
+
+      <!-- NAVIGATION -->
+      <nav class="main-nav">
+
+        <a class="active" href="#">
+          Home
+        </a>
+
+        <a href="#collections">
+          Collections
+        </a>
+
+        <a href="#about">
+          About Us
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <!-- HEADER ACTIONS -->
+      <div class="header-actions">
+
+        <button type="button" class="search-btn" aria-label="Search">
+
+          <i class="fas fa-search"></i>
+
+        </button>
+
+
+        <button type="button" class="enquire-btn" (click)="enquireNow()">
+
+          <i class="fab fa-whatsapp"></i>
+
+          <span>Enquire Now</span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <section class="hero-section">
+
+    <!-- Decorative background -->
+    <div class="hero-decoration hero-decoration-left"></div>
+    <div class="hero-decoration hero-decoration-right"></div>
+
+
+    <!-- Hero image -->
+    <div class="hero-image"></div>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+      <!-- LEFT CONTENT -->
+
+      <div class="hero-main">
+
+        <span class="hero-small-title">
+          Timeless Jewellery
+        </span>
+
+
+        <h1>
+          KRIYASH JEWELS
+        </h1>
+
+
+        <div class="gold-divider">
+
+          <span></span>
+
+          ✦
+
+          <span></span>
+
+        </div>
+
+
+        <div class="hero-tagline">
+
+          <span>Your Vision</span>
+
+          <b>✧</b>
+
+          <span>Our Creation</span>
+
+        </div>
+
+
+        <p>
+          Elegance crafted for life's most
+          <br>
+          precious moments.
+        </p>
+
+
+        <button type="button" class="hero-btn">
+
+          <span>
+            EXPLORE COLLECTION
+          </span>
+
+          <b>→</b>
+
+        </button>
+
+      </div>
+
+
+      <!-- RIGHT CONTENT -->
+
+      <!-- <div class="hero-right-text">
+
+        <span>
+          A BLEND OF
+        </span>
+
+        <strong>
+          TRADITION
+        </strong>
+
+        <span>
+          &amp; MODERN
+        </span>
+
+        <strong>
+          ELEGANCE
+        </strong>
+
+
+        <div class="hero-right-divider">
+          ✦
+        </div>
+
+      </div> -->
+
+    </div>
+
+
+    <!-- Bottom ornamental divider -->
+
+    <div class="hero-bottom-decoration">
+      ✦
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CATEGORY SECTION
+  ====================================================== -->
+
+  <section class="category-section" id="collections">
+
+
+    <!-- HEADING -->
+
+    <div class="section-heading">
+
+      <div class="heading-decoration">
+        ✦
+      </div>
+
+      <h2>
+        SHOP BY CATEGORY
+      </h2>
+
+      <p>
+        Discover our exclusive collections,
+        crafted to make every moment special
+      </p>
+
+    </div>
+
+
+    <!-- CATEGORY CARDS -->
+
+    <div class="category-grid">
+
+      @for (category of categories; track category.slug) {
+
+      <div class="category-card" (click)="exploreCategory(category)">
+
+        <!-- Decorative corners -->
+
+        <span class="card-corner top-left"></span>
+        <span class="card-corner top-right"></span>
+        <span class="card-corner bottom-left"></span>
+        <span class="card-corner bottom-right"></span>
+
+
+        <!-- IMAGE -->
+
+        <div class="category-image">
+
+          <img [src]="category.image" [alt]="category.name" loading="lazy">
+
+          <div class="image-overlay"></div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="category-content">
+
+          <h3>
+            {{ category.name }}
+          </h3>
+
+
+          <div class="mini-divider">
+
+            <span></span>
+
+            ✦
+
+            <span></span>
+
+          </div>
+
+
+          <button type="button" class="view-btn" (click)="$event.stopPropagation(); exploreCategory(category)">
+
+            <span>
+              View Collection
+            </span>
+
+            <b>→</b>
+
+          </button>
+
+        </div>
+
+      </div>
+
+      }
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FEATURED COLLECTION
+  ====================================================== -->
+
+  <section class="featured-section">
+
+
+    <div class="section-heading">
+
+      <div class="heading-decoration">
+        ✦
+      </div>
+
+      <h2>
+        FEATURED COLLECTION
+      </h2>
+
+      <p>
+        Exclusive designs for your special moments
+      </p>
+
+    </div>
+
+
+    <div class="featured-grid">
+
+
+      <!-- BANGLE -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/bangle/bangle-01.jpeg" alt="Floral Gold Bangle" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Floral Gold Bangle
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- EARRING 01 -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/earring/earring_01.jpeg" alt="Diamond Hoop Earrings" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Diamond Hoop Earrings
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- EARRING 02 -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/earring/earring_02.jpeg" alt="Designer Diamond Earrings" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Designer Diamond Earrings
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- EARRING 03 -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/earring/earring_03.jpeg" alt="Floral Diamond Earrings" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Floral Diamond Earrings
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- EARRING 04 -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/earring/earring_04.jpeg" alt="Emerald Jhumka Earrings" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Emerald Jhumka Earrings
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- PENDANT -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/pendant/pendant_1.jpeg" alt="Emerald Diamond Pendant" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Emerald Diamond Pendant
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- NECKLACE -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/necklace/necklace-01.jpeg" alt="Designer Gold Necklace" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Designer Gold Necklace
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- NECKLACE SET -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/necklace/set-01.jpeg" alt="Emerald Necklace Set" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Emerald Necklace Set
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- GOD JEWELLERY -->
+
+      <div class="featured-card">
+
+        <div class="featured-image">
+
+          <img src="/images/jewelry/lakshmi-01.jpeg" alt="Lakshmi Devi Jewellery" loading="lazy">
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <h3>
+            Lakshmi Devi Jewellery
+          </h3>
+
+          <button type="button">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Enquire Now
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer id="contact">
+
+    <div class="footer-logo">
+      KRIYASH
+      <span>JEWELS</span>
+    </div>
+
+    <p>
+      Your Vision ✦ Our Creation
+    </p>
+
+    <div class="footer-divider"></div>
+
+    <small>
+      © 2026 Kriyash Jewels. All Rights Reserved.
+    </small>
+
+  </footer>
+
+</div>
